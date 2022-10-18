@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CarWebApplication.Data;
@@ -11,9 +7,9 @@ namespace CarWebApplication.Pages.Cars
 {
     public class DetailsModel : PageModel
     {
-        private readonly CarWebApplication.Data.CarWebApplicationDbContext _context;
+        private readonly CarWebApplicationDbContext _context;
 
-        public DetailsModel(CarWebApplication.Data.CarWebApplicationDbContext context)
+        public DetailsModel(CarWebApplicationDbContext context)
         {
             _context = context;
         }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CarWebApplication.Data;
 
@@ -11,9 +6,9 @@ namespace CarWebApplication.Pages.Cars
 {
     public class IndexModel : PageModel
     {
-        private readonly CarWebApplication.Data.CarWebApplicationDbContext _context;
+        private readonly CarWebApplicationDbContext _context;
 
-        public IndexModel(CarWebApplication.Data.CarWebApplicationDbContext context)
+        public IndexModel(CarWebApplicationDbContext context)
         {
             _context = context;
         }
